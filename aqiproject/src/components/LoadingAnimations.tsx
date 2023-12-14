@@ -40,6 +40,7 @@ const LoadingAnimations = () => {
     const timeoutId = setTimeout(() => {
       if (currentIndex < items.length) {
         setDisplayedItems(items[currentIndex]);
+        setItems((prev) => prev);
         setCurrentIndex((prevIndex) => prevIndex + 1);
       }
     }, time);

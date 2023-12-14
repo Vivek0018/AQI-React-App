@@ -1,11 +1,4 @@
-import {
-  ChangeEvent,
-  FormEvent,
-  useState,
-  SyntheticEvent,
-  useEffect,
-  MouseEvent,
-} from "react";
+import { ChangeEvent, FormEvent, useState, MouseEvent } from "react";
 
 import PageSections from "./PageSections";
 import LoadingAnimations from "./LoadingAnimations";

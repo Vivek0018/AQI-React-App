@@ -1,9 +1,4 @@
-import { MouseEvent } from "react";
-
 const PageSections = () => {
-  const handleCityClick = (event: MouseEvent) => {
-    console.log(event);
-  };
   return (
     <>
       <section className="aqi-def" id="aqi-def">

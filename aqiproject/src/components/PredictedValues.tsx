@@ -34,7 +34,7 @@ const PredictedValues: React.FC<GenericDictionaryProps> = ({
         maxValue = aqiPresentData[aqi];
       }
     }
-    return [maxKey, maxValue];
+    return maxValue;
   };
   const getPresentAQIValues: any = (givenDayData: GenericDictionaryProps) => {
     let maxKey = Object.keys(givenDayData)[0];
@@ -101,7 +101,7 @@ const PredictedValues: React.FC<GenericDictionaryProps> = ({
   };
 
   const getClassNames = (data: GenericDictionaryProps) => {
-    const [maxKey, maxValue] = getMaxValue(data);
+    const maxValue = getMaxValue(data);
     const classNames: string[] = ["r-a-b-a-item r-a-b-a"];
     const colorClass: string | undefined = getClassForColor(maxValue);
     if (colorClass) {
