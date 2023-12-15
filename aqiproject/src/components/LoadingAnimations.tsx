@@ -35,7 +35,7 @@ const LoadingAnimations = () => {
       if (targetRef.current)
         targetRef.current.scrollIntoView({ behavior: "smooth" });
     } else {
-      time = 5000;
+      time = 10000;
     }
     const timeoutId = setTimeout(() => {
       if (currentIndex < items.length) {
