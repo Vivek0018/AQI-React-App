@@ -197,7 +197,11 @@ const MainBody = () => {
               </div>
               <div className="cities-e">
                 <div className="e-a-a-a">
-                  <div className="e-a-a-a-a e-1" onClick={handleCityClick}>
+                  <div
+                    className="e-a-a-a-a e-1"
+                    onClick={handleCityClick}
+                    city-name="Delhi"
+                  >
                     <div className="e-city-data">
                       <div className="e-img-container">
                         <img src={delhiImage} alt="Delhi" />
@@ -219,7 +223,11 @@ const MainBody = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="e-a-a-a-a e-2" onClick={handleCityClick}>
+                  <div
+                    className="e-a-a-a-a e-2"
+                    onClick={handleCityClick}
+                    city-name="New York"
+                  >
                     <div className="e-city-data">
                       <div className="e-img-container">
                         <img src={newYorkImg} alt="NewYork" />
@@ -241,7 +249,11 @@ const MainBody = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="e-a-a-a-a e-3" onClick={handleCityClick}>
+                  <div
+                    className="e-a-a-a-a e-3"
+                    onClick={handleCityClick}
+                    city-name="Tokyo"
+                  >
                     <div className="e-city-data">
                       <div className="e-img-container">
                         <img src={tokyoImg} alt="Tokyo" />
