@@ -421,3 +421,10 @@ section{
 .loader-lower-section .small{
     margin-block: 5px;
 }
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(60deg, rgba(191,57,137,0.7) 0%, rgba(9,107,222,0.7) 100%);
+    border-radius: 20px;
+}
