@@ -4,6 +4,9 @@ import PageSections from "./PageSections";
 import LoadingAnimations from "./LoadingAnimations";
 import PresentDayData from "./PresentDayData";
 import PredictedValues from "./PredictedValues";
+import DelhiImage from "/src/assets/images/DelhiImg.jpg";
+import NewYorkImg from "/src/assets/images/NewYorkImg.jpeg";
+import TokyoImg from "/src/assets/images/TokyoImg.jpeg";
 
 interface FormState {
   inputValue: string;
@@ -197,10 +200,7 @@ const MainBody = () => {
                   <div className="e-a-a-a-a e-1" onClick={handleCityClick}>
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img
-                          src="/src/assets/images/DelhiImg.jpg"
-                          alt="Delhi"
-                        />
+                        <img src={DelhiImage} alt="Delhi" />
                       </div>
                       <div className="e-city-head margin-10">
                         <h4 className="large white-txt">Delhi</h4>
@@ -222,10 +222,7 @@ const MainBody = () => {
                   <div className="e-a-a-a-a e-2" onClick={handleCityClick}>
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img
-                          src="/src/assets/images/NewYorkImg.jpeg"
-                          alt="NewYork"
-                        />
+                        <img src={NewYorkImg} alt="NewYork" />
                       </div>
                       <div className="e-city-head margin-10">
                         <h4 className="large white-txt">New York</h4>
@@ -247,10 +244,7 @@ const MainBody = () => {
                   <div className="e-a-a-a-a e-3" onClick={handleCityClick}>
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img
-                          src="/src/assets/images/TokyoImg.jpeg"
-                          alt="Tokyo"
-                        />
+                        <img src={TokyoImg} alt="Tokyo" />
                       </div>
                       <div className="e-city-head margin-10">
                         <h4 className="large white-txt">Tokyo</h4>

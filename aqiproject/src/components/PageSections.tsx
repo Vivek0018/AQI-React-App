@@ -1,3 +1,5 @@
+import AQIRanges from "/src/assets/images/aqi_mini.webp";
+
 const PageSections = () => {
   return (
     <>
@@ -167,10 +169,7 @@ const PageSections = () => {
               </div>
               <div className="img-des">
                 <div className="data-img">
-                  <img
-                    src="/src/assets/images/aqi_mini.webp"
-                    alt="AQI Ranges"
-                  />
+                  <img src={AQIRanges} alt="AQI Ranges" />
                 </div>
               </div>
             </div>

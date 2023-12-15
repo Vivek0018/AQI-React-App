@@ -1,3 +1,5 @@
+import AQILogo from "/src/assets/images/AQILogo.png";
+
 const Footer = () => {
   return (
     <>
@@ -75,11 +77,7 @@ const Footer = () => {
           <div className="c-a">
             <div className="c-a-a">
               <div className="c-a-a-a logo-container">
-                <img
-                  src="/src/assets/images/AQILogo.png"
-                  alt="AQI"
-                  className="logo"
-                />
+                <img src={AQILogo} alt="AQI" className="logo" />
               </div>
               <div className="c-a-z">
                 <span className="small">© AQI All rights reserved</span>
