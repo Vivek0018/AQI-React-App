@@ -4,9 +4,9 @@ import PageSections from "./PageSections";
 import LoadingAnimations from "./LoadingAnimations";
 import PresentDayData from "./PresentDayData";
 import PredictedValues from "./PredictedValues";
-import DelhiImage from "/src/assets/images/DelhiImg.jpg";
-import NewYorkImg from "/src/assets/images/NewYorkImg.jpeg";
-import TokyoImg from "/src/assets/images/TokyoImg.jpeg";
+import delhiImage from "/src/assets/images/DelhiImg.jpg";
+import newYorkImg from "/src/assets/images/NewYorkImg.jpeg";
+import tokyoImg from "/src/assets/images/TokyoImg.jpeg";
 
 interface FormState {
   inputValue: string;
@@ -200,7 +200,7 @@ const MainBody = () => {
                   <div className="e-a-a-a-a e-1" onClick={handleCityClick}>
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img src={DelhiImage} alt="Delhi" />
+                        <img src={delhiImage} alt="Delhi" />
                       </div>
                       <div className="e-city-head margin-10">
                         <h4 className="large white-txt">Delhi</h4>
@@ -222,7 +222,7 @@ const MainBody = () => {
                   <div className="e-a-a-a-a e-2" onClick={handleCityClick}>
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img src={NewYorkImg} alt="NewYork" />
+                        <img src={newYorkImg} alt="NewYork" />
                       </div>
                       <div className="e-city-head margin-10">
                         <h4 className="large white-txt">New York</h4>
@@ -244,7 +244,7 @@ const MainBody = () => {
                   <div className="e-a-a-a-a e-3" onClick={handleCityClick}>
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img src={TokyoImg} alt="Tokyo" />
+                        <img src={tokyoImg} alt="Tokyo" />
                       </div>
                       <div className="e-city-head margin-10">
                         <h4 className="large white-txt">Tokyo</h4>
