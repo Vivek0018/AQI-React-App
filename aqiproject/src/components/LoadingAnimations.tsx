@@ -63,6 +63,7 @@ const LoadingAnimations = () => {
           </div>
           <div className="loader-lower-section">
             <strong className="large-font">{displayedItems.text}</strong>
+            <p className="small">This might take upto 2-3min</p>
           </div>
         </div>
       )}

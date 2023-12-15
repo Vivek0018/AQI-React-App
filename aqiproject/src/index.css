@@ -415,3 +415,9 @@ section{
         font-size: 13px;
     }
 }
+.loader-lower-section{
+    text-align: center;
+}
+.loader-lower-section .small{
+    margin-block: 5px;
+}
