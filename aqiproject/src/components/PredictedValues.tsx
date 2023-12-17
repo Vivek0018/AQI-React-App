@@ -47,8 +47,8 @@ const PredictedValues: React.FC<GenericDictionaryProps> = ({
     }
     return (
       <>
-        <div className="r-a-b-b">{maxKey}</div>
         <div className="r-a-b-b">{maxValue.toFixed(2)}</div>
+        <div className="r-a-b-b">{maxKey}</div>
       </>
     );
   };
