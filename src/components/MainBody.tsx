@@ -5,7 +5,7 @@ import LoadingAnimations from "./LoadingAnimations";
 import PresentDayData from "./PresentDayData";
 import PredictedValues from "./PredictedValues";
 import delhiImage from "/src/assets/images/DelhiImg.jpg";
-import newYorkImg from "/src/assets/images/NewYorkImg.jpeg";
+import mumbaiImg from "/src/assets/images/mumbai.jpeg";
 import tokyoImg from "/src/assets/images/TokyoImg.jpeg";
 
 interface FormState {
@@ -226,17 +226,17 @@ const MainBody = () => {
                   <div
                     className="e-a-a-a-a e-2"
                     onClick={handleCityClick}
-                    city-name="New York"
+                    city-name="Mumbai"
                   >
                     <div className="e-city-data">
                       <div className="e-img-container">
-                        <img src={newYorkImg} alt="NewYork" />
+                        <img src={mumbaiImg} alt="Mumbai" />
                       </div>
                       <div className="e-city-head margin-10">
-                        <h4 className="large white-txt">New York</h4>
+                        <h4 className="large white-txt">Mumbai</h4>
                       </div>
                     </div>
-                    <div className="e-a-hidden" city-name="New York">
+                    <div className="e-a-hidden" city-name="Mumbai">
                       <div className="data-sec-e  white-txt">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
