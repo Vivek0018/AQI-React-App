@@ -43,8 +43,11 @@ const MainBody = () => {
     fetchData(key);
   };
   const fetchData = async (key: string) => {
+    console.log(key);
+
     const response = await fetch(
-      `https://fast-api-new.onrender.com/city/${key}`
+      // `https://fast-api-new.onrender.com/city/${key}`
+      `http://127.0.0.1:8000/city/${key}`
     );
     // setData(response);
 
@@ -67,13 +70,15 @@ const MainBody = () => {
       );
     else {
       //whole response data
-      const data = responseData.response;
+      const data = responseData["response"];
       //predicted values data
-      const predictedData = data.predicted_data;
+      const predictedData = data["predicted_data"];
       //present day data
       const presentDayData = data.presentDayData;
-      const cityName = data.city_name;
-      const cityStation = data.city_station;
+      const cityName = data["city_name"];
+      console.log(cityName);
+
+      const cityStation = data["city_station"];
       const cityNameFromStation = String(cityStation).split(",");
       const countryCode = data.country_code;
 
