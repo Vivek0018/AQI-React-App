@@ -46,6 +46,81 @@ const Footer = () => {
                 </li>
                 <li className="d-items">
                   <h3>
+                    Algorithm Used : Exponential Smoothening
+                    <a
+                      href="https://www.sktime.net/en/v0.23.1/api_reference/auto_generated/sktime.forecasting.exp_smoothing.ExponentialSmoothing.html#:~:text=The%20alpha%20value%20of%20the,float%20or%20None%2C%20default%3DNone"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="small-svg"
+                        viewBox="0 0 640 512"
+                      >
+                        <path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                      </svg>
+                    </a>
+                  </h3>
+                  <p className="small">
+                    &nbsp;&nbsp;Exponential smoothing was proposed in the late
+                    1950s (Brown, 1959; Holt, 1957; Winters, 1960), and has
+                    motivated some of the most successful forecasting methods.
+                    Forecasts produced using exponential smoothing methods are
+                    weighted averages of past observations, with the weights
+                    decaying exponentially as the observations get older. In
+                    other words, the more recent the observation the higher the
+                    associated weight. This framework generates reliable
+                    forecasts quickly and for a wide range of time series, which
+                    is a great advantage and of major importance to applications
+                    in industry.
+                  </p>
+                </li>
+                <li className="d-items">
+                  <h3>
+                    Algorithm Used : ARIMA
+                    <a
+                      href="https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="small-svg"
+                        viewBox="0 0 640 512"
+                      >
+                        <path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                      </svg>
+                    </a>
+                  </h3>
+                  <p className="small">
+                    &nbsp;&nbsp;In statistics and econometrics, and in
+                    particular in time series analysis, an autoregressive
+                    integrated moving average (ARIMA) model is a generalization
+                    of an autoregressive moving average (ARMA) model. To better
+                    comprehend the data or to forecast upcoming series points,
+                    both of these models are fitted to time series data. ARIMA
+                    models are applied in some cases where data show evidence of
+                    non-stationarity in the sense of mean (but not
+                    variance/autocovariance), where an initial differencing step
+                    (corresponding to the "integrated" part of the model) can be
+                    applied one or more times to eliminate the non-stationarity
+                    of the mean function (i.e., the trend).[1] When the
+                    seasonality shows in a time series, the
+                    seasonal-differencing[2] could be applied to eliminate the
+                    seasonal component. Since the ARMA model, according to the
+                    Wold's decomposition theorem,[3][4][5] is theoretically
+                    sufficient to describe a regular (a.k.a. purely
+                    nondeterministic[5]) wide-sense stationary time series, we
+                    are motivated to make stationary a non-stationary time
+                    series, e.g., by using differencing, before we can use the
+                    ARMA model.[6] Note that if the time series contains a
+                    predictable sub-process (a.k.a. pure sine or complex-valued
+                    exponential process[4]), the predictable component is
+                    treated as a non-zero-mean but periodic (i.e., seasonal)
+                    component in the ARIMA framework so that it is eliminated by
+                    the seasonal differencing.
+                  </p>
+                </li>
+                <li className="d-items">
+                  <h3>
                     Data Source : WAQI API
                     <a href="https://aqicn.org/api/" target="_blank">
                       <svg

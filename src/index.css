@@ -30,6 +30,18 @@ header{
 }
 .header-data{
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.links a{
+    padding: 20px;
+}
+.links a.active{
+    border-bottom: 2px solid rgba(0,0,0,0.8);
 }
 .logo-container{
     height: 100%;
@@ -427,4 +439,80 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: linear-gradient(60deg, rgba(191,57,137,0.7) 0%, rgba(9,107,222,0.7) 100%);
     border-radius: 20px;
+}
+.predictions-models-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-block: 10px;
+}
+.model-item{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+    /* cursor: pointer; */
+    transition: all 0.2s;
+}
+.model-item{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.model-item.active{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.predictions-models-list .model-item:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.predictions-item{
+    display: none;
+}
+.predictions-item.active{
+    display: block;
+}
+.advanced-results{
+    padding: 10px;
+}
+.advanced-results h4{
+    font-size: 15px;
+}
+.advanced-results h4{
+    font-size: 15px;
+}
+ul{
+    padding-inline-start: 30px;
+}
+.adv-res-container{
+    font-size: 14px;
+    padding-inline-start: 30px;
+}
+.plot{
+    height: 200px;
+}
+.show-advanced-results{
+    cursor: pointer;
+}
+.show-advanced-results h4{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.plot-item img{
+    margin: 10px;
+}
+.metric-value{
+    font-size: 11px;
+    font-weight: 600;
+}
+h6{
+    font-size: 12px;
+}
+.adv-res-container{
+    display: none;
+}
+.adv-res-container.active{
+    display: block;
+}
+.eye-icon{
+    height: 13px;
 }

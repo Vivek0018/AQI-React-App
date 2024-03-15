@@ -7,6 +7,12 @@ const Header = () => {
         <div className="logo-container">
           <img src={aqiLogo} alt="AQI" className="logo" />
         </div>
+        <div className="links">
+          <a className="active" href="/">
+            Predictor
+          </a>
+          <a href="/live-aqi/">Live AQI Map</a>
+        </div>
       </div>
     </header>
   );

@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState, MouseEvent } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 import PageSections from "./PageSections";
 import LoadingAnimations from "./LoadingAnimations";
@@ -33,9 +33,9 @@ const MainBody = () => {
       </>
     ));
   };
-  const handleCityClick = (event: MouseEvent) => {
-    const element: HTMLDivElement = event.target as HTMLDivElement;
-    const key: any = element.getAttribute("city-name");
+  const handleCityClick = (key: any) => {
+    // const element: HTMLDivElement = event.target as HTMLDivElement;
+    // const key: any = element.getAttribute("city-name");
     setIsLoadingAnimation(true);
     // alert(formState.inputValue);
     // fetchData(formState.inputValue);
@@ -49,6 +49,20 @@ const MainBody = () => {
       // `https://fast-api-new.onrender.com/city/${key}`
       `http://127.0.0.1:8000/city/${key}`
     );
+    // let response: any;
+
+    // let request: XMLHttpRequest = new XMLHttpRequest();
+    // request.open("get", "demo.json", true);
+    // request.send();
+    // request.onload = function () {
+    //   if (this.readyState == 4 && this.status == 200) {
+    //     response = JSON.parse(this.responseText);
+    //     console.log(response);
+    //   }
+    // };
+
+    // console.log(response);
+
     // setData(response);
 
     const responseData = await response.json();
@@ -81,11 +95,13 @@ const MainBody = () => {
       const cityStation = data["city_station"];
       const cityNameFromStation = String(cityStation).split(",");
       const countryCode = data.country_code;
+      // const plotImages = data["plotImages"];
 
       const returnData = (
         <>
           <div className="r-header margin-10">
             <h2>Showing Results for {cityName}</h2>
+            {/* <PlotImages imageSources={plotImages} /> */}
           </div>
           <div className="r-content small margin-10">
             <div className="r-res-data">
@@ -204,7 +220,7 @@ const MainBody = () => {
                 <div className="e-a-a-a">
                   <div
                     className="e-a-a-a-a e-1"
-                    onClick={handleCityClick}
+                    onClick={() => handleCityClick("Delhi")}
                     city-name="Delhi"
                   >
                     <div className="e-city-data">
@@ -230,7 +246,7 @@ const MainBody = () => {
                   </div>
                   <div
                     className="e-a-a-a-a e-2"
-                    onClick={handleCityClick}
+                    onClick={() => handleCityClick("Mumbai")}
                     city-name="Mumbai"
                   >
                     <div className="e-city-data">
@@ -256,7 +272,7 @@ const MainBody = () => {
                   </div>
                   <div
                     className="e-a-a-a-a e-3"
-                    onClick={handleCityClick}
+                    onClick={() => handleCityClick("Tokyo")}
                     city-name="Tokyo"
                   >
                     <div className="e-city-data">
